@@ -5,10 +5,12 @@ nav:
   - Frontend: frontend.md
   - Interview Question Prompt: api-question-prompt.md
   - Resources:
-    - Overview: resources/resources.md
-    - Redis Basics: resources/redis-basics.md
+    - Overview: resources/overview.md
     - Git Basics: resources/git-basics.md
-    - React Basics: resources/react-basics.md
-    - Python Basics: resources/python-basics.md
     - Docker Basics: resources/docker-basics.md
+    - Python Basics: resources/python-basics.md
+    - Redis Basics: resources/redis-basics.md
+    - HTML Basics: resources/html-basics.md
+    - React Basics: resources/react-basics.md
+    - NextJs Basics: resources/next-js-basics.md
 theme: readthedocs
