@@ -2,18 +2,46 @@
 
 ##  Instructions
 
-In this section, you will collaborate with a partner to instantiate the producer and consumer classes. One person will focus on the producer section while the other works on the consumer section. Afterwards, you'll exchange solutions verbally or via GitHub. We highly recommend using GitHub for this purpose, working on the same fork, and pushing your solutions. GitHub is widely used across the tech industry. You can find a GitHub file in the resource folder to assist you with this.
+In this section, you will collaborate with a partner to instantiate the producer and consumer classes. This is a paired programming exercise where you will work together using Git and GitHub for code sharing.
 
-Below are bullet points of the criteria:
-- First ensure that each contributor is working from and has `cloned the same fork` of the BBIT-LEARNING-LABS repository.
-- Second ensure that each contributor has been `added as a collaborator to the fork.`
-- One person completes the `producer section.`
-- One person completes the `consumer section.`
-- Each contributor should then [git push](../Resources/Git-Commands.md#commands-youll-need-for-today) their solutions to the fork.
-- Lastly, follow the `testing instructions below` to send and recieve a message to complete this section.
+### Partner Workflow
+
+**Setup (Do this together):**
+1. **Decide who will be the fork owner** - This person will create the fork of the lab repository
+2. **Fork owner**: Fork the repository to your GitHub account
+3. **Fork owner**: Add your partner as a collaborator:
+   - Go to your fork's Settings → Collaborators → Add people
+   - Enter your partner's GitHub username and send the invitation
+4. **Partner**: Accept the collaboration invitation (check your email or GitHub notifications)
+5. **Both students**: Clone the same fork to your local machine using `git clone`
+6. **Both students**: Ensure you can bring up the lab successfully
+
+**Division of Work:**
+- **Partner A**: Complete the `producer section` in the producer folder
+- **Partner B**: Complete the `consumer section` in the consumer folder
+
+**Sharing Code (Do this after completing your section):**
+1. **Both students**: After completing your assigned section, commit your changes:
+   - `git add .`
+   - `git commit -m "Implement [producer/consumer] section"`
+2. **Partner A**: Push your producer code first: `git push`
+3. **Partner B**: Pull Partner A's changes, then push your consumer code:
+   - `git pull` (to get the producer code)
+   - `git push` (to share your consumer code)
+4. **Partner A**: Pull Partner B's consumer code: `git pull`
+5. **Both students**: Verify you both have the complete solution (producer + consumer)
+
+**Testing Together:**
+- Once both partners have pulled all changes, follow the `testing instructions below` to send and receive messages
+- Both partners should be able to run the complete solution on their machines
+
+**Important Notes:**
+- Communicate frequently with your partner about your progress
+- If you encounter merge conflicts, work together to resolve them
+- Use the [git_commands.md](../resources/git_commands.md) file for Git command reference
 
    
-`IMPORTANT!!!` Please utlize the [Functions.md](../Resources/Functions.md) file as it contains almost all the functions you will need for this lab. Also, other helpful information can be found under the Resources folder for Python, Git, and RabbitMQ details.
+`IMPORTANT!!!` Please utilize the [Functions.md](../Resources/Functions.md) file as it contains almost all the functions you will need for this lab. Also, other helpful information can be found under the Resources folder for Python, Git, and RabbitMQ details.
 
 ## Testing
 In order to verify that the consumer and producer class was properly instantiated, we will use the provided  `consume.py`, and `publish.py` file from producer and consumer folder. Follow the below instructions:
