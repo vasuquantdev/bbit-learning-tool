@@ -9,11 +9,15 @@ In this section, you will collaborate with a partner to instantiate the producer
 **Setup (Do this together):**
 1. **Decide who will be the fork owner** - This person will create the fork of the lab repository
 2. **Fork owner**: Fork the repository to your GitHub account
+    - Look for a "Fork" button in the top right corner of the main repo screen
+    - After forking, it should take you to your fork of the repo. The repo name will be `<your_github_username>/bbit-learning-labs`
 3. **Fork owner**: Add your partner as a collaborator:
    - Go to your fork's Settings → Collaborators → Add people
    - Enter your partner's GitHub username and send the invitation
 4. **Partner**: Accept the collaboration invitation (check your email or GitHub notifications)
-5. **Both students**: Clone the same fork to your local machine using `git clone`
+5. **Both students**: 
+    - Codespaces: Create a codespace from the same forked repo
+    - Local: Clone the same fork to your local machine using `git clone`
 6. **Both students**: Ensure you can bring up the lab successfully
 
 **Division of Work:**
@@ -31,14 +35,14 @@ In this section, you will collaborate with a partner to instantiate the producer
 4. **Partner A**: Pull Partner B's consumer code: `git pull`
 5. **Both students**: Verify you both have the complete solution (producer + consumer)
 
-**Testing Together:**
-- Once both partners have pulled all changes, follow the `testing instructions below` to send and receive messages
-- Both partners should be able to run the complete solution on their machines
-
 **Important Notes:**
 - Communicate frequently with your partner about your progress
 - If you encounter merge conflicts, work together to resolve them
 - Use the [git_commands.md](../resources/git_commands.md) file for Git command reference
+
+**Testing Together:**
+- Once both partners have pulled all changes, follow the `testing instructions below` to send and receive messages
+- Both partners should be able to run the complete solution on their machines
 
    
 `IMPORTANT!!!` Please utilize the [Functions.md](../Resources/Functions.md) file as it contains almost all the functions you will need for this lab. Also, other helpful information can be found under the Resources folder for Python, Git, and RabbitMQ details.
