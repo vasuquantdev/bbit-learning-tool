@@ -30,25 +30,28 @@ The idea of this lab is to offer exposure to the RabbitMQ messaging framework, p
 
 GitHub Codespaces provides a cloud-based development environment that's ready to use with all dependencies pre-configured.
 
-1. Navigate to [https://github.com/codespaces](https://github.com/codespaces)
+1. Fork the repo
+![fork](../data/Images/fork-1.JPG)
 
-2. Click on "New codespace" to create a new codespace for this repository.
+2. Navigate to [https://github.com/codespaces](https://github.com/codespaces)
 
-3. Once your codespace is ready, open the terminal and navigate to the MarketWatch directory:
+3. Click on "New codespace" to create a new codespace for **your fork** of this repository.
+
+4. Once your codespace is ready, open the terminal and navigate to the MarketWatch directory:
     ```sh
     cd Tech-Lab-On-Campus/MarketWatch
     ```
 
-4. Start the Docker containers:
+5. Start the Docker containers:
     ```sh
     docker-compose up
     ```
 
-5. Once the containers are running, locate the **Ports** tab in your codespace (usually at the bottom of the screen).
+6. Once the containers are running, locate the **Ports** tab in your codespace (usually at the bottom of the screen).
 
-6. Find port **15672** in the ports list and click on the globe icon or forwarded address beside it to open the RabbitMQ Management UI.
+7. Find port **15672** in the ports list and click on the globe icon or forwarded address beside it to open the RabbitMQ Management UI.
 
-7. Log in to RabbitMQ using:
+8. Log in to RabbitMQ using:
    - **Username:** guest
    - **Password:** guest
 
