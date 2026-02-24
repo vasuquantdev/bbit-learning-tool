@@ -1,29 +1,34 @@
 # Functions
 
 ## Required Libraries
-```sh
+
+```python
 import pika
 import os
 ```
 
 ## Connecting to RabbitMQ service
-```sh
+
+```python
 con_params = pika.URLParameters(os.environ["AMQP_URL"])
 connection = pika.BlockingConnection(parameters=con_params)
 ```
 
 ## Establishing Channel
-```sh
+
+```python
 channel = connection.channel()
 ```
 
 ## Creating An Exchange
-```sh
+
+```python
 exchange = channel.exchange_declare(exchange="Exchange Name")
 ```
 
 ## Publishing To An Exchange
-```sh
+
+```python
 channel.basic_publish(
     exchange="Exchange Name",
     routing_key="Routing Key",
@@ -32,12 +37,14 @@ channel.basic_publish(
 ```
 
 ## Declaring Queue
-```sh
+
+```python
 channel.queue_declare(queue="Queue Name")
 ```
 
 ## Binding Queue To Exchange
-```sh
+
+```python
 channel.queue_bind(
     queue= "Queue Name",
     routing_key= "Routing Key",
@@ -46,37 +53,43 @@ channel.queue_bind(
 ```
 
 ## Setup Callback Function For Queue
-```sh
+
+```python
 channel.basic_consume(
     "Queue Name", Function Name, auto_ack=False
 )
 ```
 
 ## Acknowledge Message
-```sh
+
+```python
 channel.basic_ack(method_frame.delivery_tag, False)
 ```
 
 ## Closing Channel and Connection
-```sh
+
+```python
 channel.close()
 connection.close()
 ```
 
 ## Start Consuming Message
-```sh
+
+```python
 channel.start_consuming()
 ```
 
 ## Creating Topic Exchange
-```sh
+
+```python
 channel.exchange_declare(
     exchange="Exchange Name", exchange_type="topic"
 )
 ```
 
 ## De-Serialize JSON message object
-```sh
+
+```python
 message = json.loads(JsonMessageObject)
 ```
 

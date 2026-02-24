@@ -6,8 +6,8 @@ The idea of this lab is to offer exposure to the RabbitMQ messaging framework, p
 
 ## Unit Ordering List
 
-1. [Producer-AND-Consumer](./Producer-And-Consumer/README.md)
-2. [Topic-Exchange](./Topic-Exchange/README.md)
+1. [Producer and Consumer](./producer_and_consumer/README.md)
+2. [Topic Exchange](./topic_exchange/README.md)
 
 ## Key Learning Items
 
@@ -31,18 +31,20 @@ The idea of this lab is to offer exposure to the RabbitMQ messaging framework, p
 GitHub Codespaces provides a cloud-based development environment that's ready to use with all dependencies pre-configured.
 
 1. Fork the repo
-![fork](../data/Images/fork-1.JPG)
+![fork](/data/images/fork-1.JPG)
 
 2. Navigate to [https://github.com/codespaces](https://github.com/codespaces)
 
 3. Click on "New codespace" to create a new codespace for **your fork** of this repository.
 
 4. Once your codespace is ready, open the terminal and navigate to the MarketWatch directory:
+
     ```sh
     cd Tech-Lab-On-Campus/MarketWatch
     ```
 
 5. Start the Docker containers:
+
     ```sh
     docker-compose up
     ```
@@ -55,20 +57,20 @@ GitHub Codespaces provides a cloud-based development environment that's ready to
    - **Username:** guest
    - **Password:** guest
 
-You are now ready to start the lab! Begin by navigating to the [Producer-AND-Consumer](./Producer-And-Consumer/README.md) folder and reading the "README.md" file. Each of the units will contain a readme file which will give you the necessary instructions to complete the lab and test your solution.
+You are now ready to start the lab! Begin by navigating to the [producer_and_consumer](./producer_and_consumer/README.md) folder and reading the "README.md" file. Each of the units will contain a readme file which will give you the necessary instructions to complete the lab and test your solution.
 
 ### Option 2: Using Local Development Environment
 
 For this project, we're going to leverage the use of Docker to create a helpful development environment for all of the engineers. [Docker](https://docs.docker.com/desktop/) is a tool used to integrate software dependencies and allow developers to quickly spin up software builds in portable lightweight containers which provide consistent environments, ensuring applications run the same way across various platforms. 
 
 1. Fork the repo
-![fork](../data/Images/fork-1.JPG)
+![fork](/data/images/fork-1.JPG)
 
 2. Clone the forked repo into your working directory. Copy ssh. 
-![ssh](../data/Images/copy_ssh.PNG)
+![ssh](/data/images/copy_ssh.PNG)
 
     ```sh
-    git clone [SSH KEY]
+    git clone <SSH KEY>
     ```
 NOTE: If you are using github for the first time and have not setup ssh key, refer to the documentation on [connecting to github with ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) and setup your ssh key before running the command `git clone`.
 
@@ -101,17 +103,20 @@ There are two options to work on this project. Option [A] using an IDE, we recom
 
 * B) Jupyter Notebook
     * In the terminal window of your IDE run:
-        ```sh
+        
+        ```bash
         docker-compose up
         ```
     * In the output lines produced by the command, you will find three links providing access to the server hosting your Jupyter Notebook. Click on any one of these links to open and interact with the notebook. The links should resemble the following:
-        ```
+        
+        ```bash
             rmq_lab-1   |     To access the server, open this file in a browser:
             rmq_lab-1   |         file:///home/jovyan/.local/share/jupyter/runtime/jpserver-1-open.html
             rmq_lab-1   |     Or copy and paste one of these URLs:
             rmq_lab-1   |         http://d572024fabe2:8888/lab?token=4a07fca9cd4a66eba129533a6272f5f5443fdf3f0b7c0e5e
             rmq_lab-1   |         http://127.0.0.1:8888/lab?token=4a07fca9cd4a66eba129533a6272f5f5443fdf3f0b7c0e5e
         ```
+
 6. Here are the steps to check that the environment is running correctly:
     * Log Into the RabbitMQ Website.
         * From your desktop, open Docker Desktop Dashboard.
@@ -121,8 +126,8 @@ There are two options to work on this project. Option [A] using an IDE, we recom
     * Alternative:  Click on one of the generated URLs in your terminal, such as "http://localhost:15672/", once your docker container is up and running.
     
     * After setting up IDE you should have access to rabbit mq management. It will look like the following.
-        ![rabbitmqup](../data/Images/rabbit_mq.PNG)   
-    * You are now ready to start the lab. Begin by navigating to the [Producer-AND-Consumer](./Producer-And-Consumer/README.md) folder and reading the "README.md" file. Each of the units will contain a readme file which will give you the necessary instructions to complete the lab and test your solution.
+        ![rabbitmqup](/data/images/rabbit_mq.PNG)   
+    * You are now ready to start the lab. Begin by navigating to the [producer_and_consumer](./producer_and_consumer/README.md) folder and reading the "README.md" file. Each of the units will contain a readme file which will give you the necessary instructions to complete the lab and test your solution.
 
 
 
