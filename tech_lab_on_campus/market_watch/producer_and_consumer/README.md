@@ -38,14 +38,14 @@ In this section, you will collaborate with a partner to instantiate the producer
 **Important Notes:**
 - Communicate frequently with your partner about your progress
 - If you encounter merge conflicts, work together to resolve them
-- Use the [git_commands.md](../resources/git_commands.md) file for Git command reference
+- Use the [git_commands.md](../resources/Git-Commands.md) file for Git command reference
 
 **Testing Together:**
 - Once both partners have pulled all changes, follow the `testing instructions below` to send and receive messages
 - Both partners should be able to run the complete solution on their machines
 
    
-`IMPORTANT!!!` Please utilize the [Functions.md](../Resources/Functions.md) file as it contains almost all the functions you will need for this lab. Also, other helpful information can be found under the Resources folder for Python, Git, and RabbitMQ details.
+`IMPORTANT!!!` Please utilize the [Functions.md](../resources/Functions.md) file as it contains almost all the functions you will need for this lab. Also, other helpful information can be found under the resources folder for Python, Git, and RabbitMQ details.
 
 ## Testing
 In order to verify that the consumer and producer class was properly instantiated, we will use the provided  `consume.py`, and `publish.py` file from producer and consumer folder. Follow the below instructions:
