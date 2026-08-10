@@ -11,35 +11,6 @@ Some information about a NextJS project structure:
 
 ## Getting Started
 
-The `your-nextjs-app` will be your main working directory. In order to run your webapp, follow the instructions below.
+See the [Web Development lab README](../../README.md) for clone and Docker setup instructions.
 
-### Technical Requirements
-- Docker
-- Git
-
-### Installing Git
-
-In order to easily download the most up-to-date version of this repository, you will be interested in downloading [Git](https://git-scm.com/downloads). Once you have downloaded and installed Git, you should be able to clone this repository.
-
-Once you have installed Git, clone this repository by opening a terminal window and running:
-```
-git clone https://github.com/bloomberg/bbit-learning-labs
-```
-
-The `bbit-learning-labs` repository is the parent directory of this tech lab. Your work will be contained within the `bbit-learning-labs/WebDevelopment` directory. Navigate to this directory by running the command `cd bbit-learning-labs/`, in a terminal window.
-
-### Installing Docker
-
-Docker Compose is a tool for defining and running multi-container applications. It is the key to unlocking a streamlined and efficient development and deployment experience.
-
-1. [Install Docker](https://docs.docker.com/get-docker/) by following instructions for your Operating System.
-
-2. Then, build and run your application containers from the `bbit-learning-labs/WebDevelopment` directory by running the command `docker compose up`:
-    * The `docker compose up` command will execute the following commands (`npm install` && `npm run dev`, defined in the `docker-compose.yml` file) that will start your web application in addition to running a local backend server for your webapp API requests.
-
-3. Your web application should be running. Keep this directory handy, because here is where you'll be creating/modifying your project files.
-
-4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the UI of your web application.
-
-This is an example of how the website should look like after a successful setup:
-![Successful setup](./Webapp-After-Setup.png)
+Once the stack is running, open [http://localhost:3000](http://localhost:3000) with your browser to see the UI of your web application.

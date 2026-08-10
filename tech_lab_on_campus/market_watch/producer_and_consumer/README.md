@@ -10,7 +10,7 @@ In this section, you will collaborate with a partner to instantiate the producer
 1. **Decide who will be the fork owner** - This person will create the fork of the lab repository
 2. **Fork owner**: Fork the repository to your GitHub account
     - Look for a "Fork" button in the top right corner of the main repo screen
-    - After forking, it should take you to your fork of the repo. The repo name will be `<your_github_username>/bbit-learning-labs`
+    - After forking, it should take you to your fork of the repo. The repo name will be `<your_github_username>/bbit-learning-tool`
 3. **Fork owner**: Add your partner as a collaborator:
    - Go to your fork's Settings → Collaborators → Add people
    - Enter your partner's GitHub username and send the invitation

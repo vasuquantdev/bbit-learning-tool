@@ -24,7 +24,7 @@ export default function Navbar() {
                                 <p id='nav-divider'>|</p>
                             </li>
                             <li>
-                                <Link href='https://github.com/bloomberg/bbit-learning-labs' target="_blank"><span className="menu-item">Github</span></Link>
+                                <Link href='https://github.com/vasuquantdev/bbit-learning-tool' target="_blank"><span className="menu-item">Github</span></Link>
                             </li>
                             <li>
                                 <Link href='/'><span className="menu-item">Documentation</span></Link>

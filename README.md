@@ -1,13 +1,17 @@
-
 # Learning Labs
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bloomberg/bbit-learning-labs/HEAD)
 
-Get ready to learn! Bloomberg learning labs are a collection of activities designed to help candidates learn more about particular technologies, financial domain concepts and display how we can use computer science knowledge to solve problems in this domain.
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/vasuquantdev/bbit-learning-tool)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/vasuquantdev/bbit-learning-tool/HEAD)
+
+**Repository:** [github.com/vasuquantdev/bbit-learning-tool](https://github.com/vasuquantdev/bbit-learning-tool)
+
+Get ready to learn! Bloomberg learning labs are a collection of activities designed to help candidates learn more about particular technologies, financial domain concepts, and display how we can use computer science knowledge to solve problems in this domain.
 
 ## Menu
 
 - [Rationale](#rationale)
-- [Framework](#Framework)
+- [Framework](#framework)
+- [Getting Started](#getting-started)
 - [Contributions](#contributions)
 - [License](#license)
 - [Code of Conduct](#code-of-conduct)
@@ -42,7 +46,20 @@ For expected solutions, the lab will provide developers with an interface. The m
 
 #### *Tests*
 
-Every piece of code needs a good test! To help validate that what you've developed matches requirements we've included test files. They focus on the expected use cases of a class, but can always be expanded if you'd like to increase your coverage. 
+Every piece of code needs a good test! To help validate that what you've developed matches requirements we've included test files. They focus on the expected use cases of a class, but can always be expanded if you'd like to increase your coverage.
+
+## Getting Started
+
+Clone the repository and explore the available labs:
+
+```bash
+git clone https://github.com/vasuquantdev/bbit-learning-tool.git
+cd bbit-learning-tool
+```
+
+You can also browse the source, open issues, and submit pull requests directly on GitHub:
+
+[https://github.com/vasuquantdev/bbit-learning-tool](https://github.com/vasuquantdev/bbit-learning-tool)
 
 ## Contributions
 
@@ -50,10 +67,10 @@ We :heart: contributions.
 
 Have you had a good experience with this project? Why not share some love and contribute code, or just let us know about any issues you had with it?
 
-We welcome issue reports [here](../../issues); be sure to choose the proper issue template for your issue, so that we can be sure you're providing the necessary information.
+We welcome issue reports on the [Issues](https://github.com/vasuquantdev/bbit-learning-tool/issues) page; be sure to choose the proper issue template for your issue, so that we can be sure you're providing the necessary information.
 
-Before sending a [Pull Request](../../pulls), please make sure you read our
-[Contribution Guidelines](https://github.com/bloomberg/.github/blob/master/CONTRIBUTING.md).
+Before sending a [Pull Request](https://github.com/vasuquantdev/bbit-learning-tool/pulls), please make sure you read our
+[Contribution Guidelines](https://github.com/vasuquantdev/bbit-learning-tool/blob/main/CONTRIBUTING.md).
 
 ## License
 
@@ -61,14 +78,11 @@ Please read the [LICENSE](LICENSE) file.
 
 ## Code of Conduct
 
-This project has adopted a [Code of Conduct](https://github.com/bloomberg/.github/blob/master/CODE_OF_CONDUCT.md).
+This project has adopted a [Code of Conduct](https://github.com/vasuquantdev/bbit-learning-tool/blob/main/CODE_OF_CONDUCT.md).
 If you have any concerns about the Code, or behavior which you have experienced in the project, please
-contact us at opensource@bloomberg.net.
+open an issue on the [repository](https://github.com/vasuquantdev/bbit-learning-tool/issues).
 
 ## Security Vulnerability Reporting
 
-If you believe you have identified a security vulnerability in this project, please send email to the project
-team at opensource@bloomberg.net, detailing the suspected issue and any methods you've found to reproduce it.
-
-Please do NOT open an issue in the GitHub repository, as we'd prefer to keep vulnerability reports private until
-we've had an opportunity to review and address them.
+If you believe you have identified a security vulnerability in this project, please open a private security advisory on
+[GitHub](https://github.com/vasuquantdev/bbit-learning-tool/security/advisories/new) rather than filing a public issue.

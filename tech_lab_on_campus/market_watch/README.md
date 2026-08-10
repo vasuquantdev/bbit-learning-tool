@@ -40,7 +40,7 @@ GitHub Codespaces provides a cloud-based development environment that's ready to
 4. Once your codespace is ready, open the terminal and navigate to the MarketWatch directory:
 
     ```sh
-    cd Tech-Lab-On-Campus/MarketWatch
+    cd tech_lab_on_campus/market_watch
     ```
 
 5. Start the Docker containers:
@@ -75,9 +75,9 @@ For this project, we're going to leverage the use of Docker to create a helpful 
 NOTE: If you are using github for the first time and have not setup ssh key, refer to the documentation on [connecting to github with ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) and setup your ssh key before running the command `git clone`.
 
 
-3. Navigate to the 'Tech-Lab-On-Campus' folder.
+3. Navigate to the market watch lab folder.
     ```sh
-    cd bbit-learning-labs/Tech-Lab-On-Campus
+    cd bbit-learning-tool/tech_lab_on_campus/market_watch
     ```
 
 4. Confirm that Docker and Docker Compose are working on your system.

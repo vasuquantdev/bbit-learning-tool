@@ -1,8 +1,8 @@
-FROM jupyter/scipy-notebook:latest
+FROM jupyter/scipy-notebook:python-3.11
 WORKDIR /app
 COPY requirements.txt .
-RUN pip install -r requirements.txt
-ENV PYTHONPATH /app/bbit-learning-labs/PortfolioManager
+RUN pip install --no-cache-dir -r requirements.txt
+ENV PYTHONPATH=/app/portfolio_manager
 
 ENTRYPOINT ["/bin/bash", "-c", "jupyter lab"]
 

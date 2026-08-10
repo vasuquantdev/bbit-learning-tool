@@ -11,6 +11,7 @@ help:
 	@echo "    fmt-backend     - Make the formatting changes directly to the backend code"
 	@echo "    lint-backend    - Lints the backend code"
 	@echo "    redis-in-docker - Runs redis in a docker container"
+	@echo "    run             - Print instructions for starting backend and frontend"
 	@echo "    run-backend     - Run the development version of the backend flask app"
 	@echo "    run-frontend    - Run the frontend version of this application"
 	@echo "    clean           - Clean out temporaries"
@@ -28,6 +29,12 @@ fmt-backend: install
 lint-backend: install
 	$(PYTHON) -m ruff check
 	$(PYTHON) -m mypy backend/app --show-error-codes
+
+.PHONY: run
+run:
+	@echo "Start the app in two terminals:"
+	@echo "  make run-backend"
+	@echo "  make run-frontend"
 
 .PHONY: run-backend
 run-backend: install

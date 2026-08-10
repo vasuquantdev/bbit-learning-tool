@@ -43,7 +43,9 @@ By participating in this tech lab, students will:
 
 ## Getting Started
 
-[Tech Lab Documentation](https://bloombergtechlab.github.io/bbit-learning-labs/)
+Full setup instructions are in the [MkDocs site](./docs/index.md).
+
+**Repository:** [github.com/vasuquantdev/bbit-learning-tool](https://github.com/vasuquantdev/bbit-learning-tool)
 
 #### Prerequisites
 - Docker
@@ -51,23 +53,20 @@ By participating in this tech lab, students will:
 - VS Code
 - VS Code Dev Containers extension
 
-
-To get started with the project, follow these steps:
-
 #### Fork and Clone the Project Repository
 
 1. Fork the project repository
 2. Clone the forked repo into your working directory, and navigate to it:
 ``` sh
-git clone https://github.com/YOUR-USERNAME/bbit-learning-labs.git
-cd bbit-learning-labs/Tech-Lab-On-Campus/NewsFeed
+git clone https://github.com/vasuquantdev/bbit-learning-tool.git
+cd bbit-learning-tool/tech_lab_on_campus/news_feed
 ```
 
 #### Open the Development Container
 
 1. Open VSCode
 2. Install the Dev Containers extension [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers). If you already have it installed, continue to the next step.
-3. Open the `bbit-learning-labs/Tech-Lab-On-Campus/NewsFeed` folder through VS Code
+3. Open the `tech_lab_on_campus/news_feed` folder through VS Code
 4. Open up the Command Palette in VSCode by either Ctrl+Shift+P (Windows) or Cmd+Shift+P (Mac) and type Dev Containers.
 5. Click on Dev Containers: Reopen in Container
 6. VSCode will start downloading some docker images and install the necessary python and npm packages
@@ -78,6 +77,8 @@ cd bbit-learning-labs/Tech-Lab-On-Campus/NewsFeed
 2. In the terminal, run `make run-backend` to run the backend
 3. Open up another new terminal window, you can use ` Ctrl+Shift+ `` again
 4. In the terminal, run `make run-frontend` to run the frontend
+
+Or run `make run` for startup instructions.
 
 ✨ You should now be ready to develop! ✨
 

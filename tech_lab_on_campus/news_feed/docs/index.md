@@ -54,8 +54,8 @@ To get started with the project, follow these steps:
 1. Fork the project repository
 2. Clone the forked repo into your working directory, and navigate to it:
 ``` sh
-git clone https://github.com/YOUR-USERNAME/bbit-learning-labs.git
-cd bbit-learning-labs/Tech-Lab-On-Campus/NewsFeed
+git clone https://github.com/vasuquantdev/bbit-learning-tool.git
+cd bbit-learning-tool/tech_lab_on_campus/news_feed
 ```
 
 ### Open the Development Container
@@ -69,13 +69,13 @@ VS Code may also show a pop up requesting to repoen in container, you can also c
 
 ### Run the Website
 
-All of the `make` commands should be run from the Newfeed folder (using the `cd bbit-learning-labs/Tech-Lab-On-Campus/NewsFeed`
-command from above should have placed you in the right folder). You can also simplify your workspace by simply opening
-the Newsfeed folder in VS Code. To check that you are in the right folder on your computer terminal:
+All of the `make` commands should be run from the news_feed folder (the `cd bbit-learning-tool/tech_lab_on_campus/news_feed`
+command from above should have placed you in the right folder). You can also simplify your workspace by opening
+the news_feed folder in VS Code. To check that you are in the right folder on your computer terminal:
 
 1. Run `pwd`
-2. Verify that is says `/local/path/to/bbit-learning-labs/Tech-Lab-On-Campus/NewsFeed`, where "/local/path/to" is your
-local computers path to the bbit-learning-labs folder you cloned. An example of this would be: "/user/USERNAME/Downloads",
+2. Verify that it ends with `tech_lab_on_campus/news_feed`, where the path before that is your
+local clone of the repository. An example would be `/Users/USERNAME/Downloads/bbit-learning-tool/tech_lab_on_campus/news_feed`,
 but this will vary from person to person.
 
 To get the web app up and running:
@@ -101,7 +101,7 @@ If you are encountering issues with docker, you can use Github codespaces instea
 2. Navigate to the forked repo
 3. Click on the green `< > Code` button
 4. Select the Codespaces tab and click on the `+` button
-5. In codespaces, open a new terminal and run `cd Tech-Lab-On-Campus/NewsFeed/`
+5. In codespaces, open a new terminal and run `cd tech_lab_on_campus/news_feed/`
 6. run `make install`
 7. run `make redis-in-docker`
 8. run `make run-backend`
@@ -111,7 +111,7 @@ If you are encountering issues with docker, you can use Github codespaces instea
 ### Starting Frontend
 
 - Clicking on http://localhost:3000 in the terminal opens to a blank page in the browser?
-    - Make sure you have done `make run` from the NewsFeed folder (where the Makefile is)
+    - Run `make run-backend` and `make run-frontend` in separate terminals from the news_feed folder (where the Makefile is), or run `make run` for instructions
     - It will probably have opened to 0.0.0.0:3000, just rewrite the url to localhost:3000 in the browser and it should load.
 - npm packages are not loading
     - If you are a bloomberg engineer, try turning off bbpvn while dev container sets up

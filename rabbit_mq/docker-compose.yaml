@@ -16,7 +16,6 @@ services:
       #Jupyter notebook port 
       - '8888:8888'
     volumes:
-      #TODO fill in the full path of your current repo location
-      - '/home/mopezen/github/bbit-learning-labs/RabbitMQ:/app'
+      - ./:/app
     environment:
       AMQP_URL: 'amqp://rabbitmq?connection_attempts=5&retry_delay=5'    

@@ -1,5 +1,5 @@
 # Use the official Jupyter Notebook Image as the base image
-FROM jupyter/scipy-notebook:latest
+FROM jupyter/scipy-notebook:python-3.11
 
 # Set the working directory
 WORKDIR /app

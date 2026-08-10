@@ -13,31 +13,27 @@
 - **Git Bash** for example, works well for this if you already installed it in step 1
 
 ### 4. Fork the GitHub repository and clone it locally.
-- In your favorite terminal, clone the repository
+- In your favorite terminal, clone the repository:
     ```
-    git clone <GitHubRepo>
+    git clone https://github.com/vasuquantdev/bbit-learning-tool.git
     ```
-- Navigate into the folder **learning_labs**
+- Navigate into the folder **bbit-learning-tool**
 
 ### 5. Create a **Docker image** of the BBIT Lab (This might take some time, so have a coffee :) )
-- First, ensure that docker is running and then in your favorite terminal, from the folder **learning_labs**, run the following command to build the docker image:
+- First, ensure that docker is running and then in your favorite terminal, from the repository root, run the following command to build the docker image:
     ```
     docker build . --tag bbitlab
     ``` 
 **We can remove this step if we publish our image to DockerHub**
 
 ### 6. Launch a docker container layer over the docker image of the lab
-- launch our container and mount the **learning_labs** folder as a volume to access the lab.
+- Launch the container and mount the repository folder as a volume to access the lab.
     ```
-    docker run -p 8888:8888 -v <full path of the folder 'learning_labs'>:/app bbitlab
+    docker run -p 8888:8888 -v <full path to bbit-learning-tool>:/app bbitlab
     ```
 
-- When the container fully launches, you should have a similar output.
-    You should copy the URL *(circled in red)* and paste it into your favorite web browser to launch Jupyter Lab.
-![alt text](./data/bbit_lab.PNG)
+- When the container fully launches, copy the Jupyter URL from the terminal output and paste it into your favorite web browser to launch Jupyter Lab.
 
-
-**If you have a similar page displaying in your browser, you are all set and ready to start working on the BBIT Lab.**
-![alt text](./data/bbit_lab_2.PNG)
+**If Jupyter Lab loads in your browser, you are all set and ready to start working on the BBIT Lab.**
 
 Thank you!!

@@ -6,7 +6,7 @@ services:
     hostname: rabbit
     ports:
       # AMQ Protocol Port
-      - '30424:30424'
+      - '5672:5672'
       # RMQ Management UI Port
       - '15672:15672'
     environment:

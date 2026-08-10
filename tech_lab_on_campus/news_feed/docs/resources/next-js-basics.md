@@ -39,7 +39,7 @@ To get started with Next.js, follow these steps:
 
 5. **Create a new page:** Add a new file `about.js` in the `pages` directory with the following content:
     ```javascript
-    // filepath: NewsFeed/pages/about.js
+    // filepath: tech_lab_on_campus/news_feed/frontend/pages/about.js
     export default function About() {
         return <h1>About Page</h1>;
     }

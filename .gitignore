@@ -1,8 +1,16 @@
-.vscode
+.vscode/
 
 # Python
 *.pyc
 __pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
 
 # Node
 node_modules/
@@ -10,3 +18,8 @@ node_modules/
 # NextJS
 next-env.d.ts
 .next/
+
+# Environment
+.env
+.env.local
+.env.*.local
